@@ -1,48 +1,34 @@
-# Prerequisites
+# ---------------------------------------------------------------------------
+# Build artifacts (C / C++)
+# ---------------------------------------------------------------------------
 *.d
-
-# Object files
 *.o
 *.ko
 *.obj
 *.elf
-
-# Linker output
 *.ilk
 *.map
 *.exp
-
-# Precompiled Headers
 *.gch
 *.pch
-
-# Libraries
 *.lib
 *.a
 *.la
 *.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
 *.so
 *.so.*
 *.dylib
-
-# Executables
 *.exe
 *.out
 *.app
 *.i*86
 *.x86_64
 *.hex
-
-# Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
-
-# Kernel Module Compile Results
+*.dwo
 *.mod*
 *.cmd
 .tmp_versions/
@@ -51,5 +37,67 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# debug information files
-*.dwo
+# Visual Studio / MSBuild intermediates
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+[Oo]bj/
+x64/
+x86/
+output/
+*.vcxproj.user
+*.sln.docstates
+*.tlog
+*.lastbuildstate
+*.idb
+*.ipch
+.vs/
+*.opensdf
+*.sdf
+
+# ---------------------------------------------------------------------------
+# Qt
+# ---------------------------------------------------------------------------
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.pro.user
+*.pro.user.*
+qt/
+qmake.stash
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.piptmp/
+pylibs/
+.idea/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
